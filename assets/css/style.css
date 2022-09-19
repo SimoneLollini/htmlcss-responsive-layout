@@ -5,15 +5,7 @@
     box-sizing: border-box;
 }
 
-:root {
-    --secondary: #0084FD;
-    --dark: #333333;
-    --primary: #9792E4;
-    --secondary-light: #B5DDFF;
-    --warning: #FDC15F;
-    --light: #fff;
-    --darker: #000;
-}
+
 
 .font {
     font-family: 'Inter', sans-serif;
@@ -84,7 +76,6 @@ img {
 .row {
     display: flex;
     flex-wrap: wrap;
-
 }
 
 .row.center {
@@ -98,10 +89,15 @@ a {
 .btn {
     border-radius: 5rem;
     padding: 1% 2%;
+    display: inline-block;
 }
 
-.light {
-    background-color: var(--light);
+.lg {
+    padding: 2% 10%;
+}
+
+.b_radius_125 {
+    border-radius: 1.25rem;
 }
 
 /* #endregion common */
@@ -126,6 +122,16 @@ a {
 /* #endregion debug */
 
 /* #region utility */
+:root {
+    --secondary: #0084FD;
+    --dark: #333333;
+    --primary: #9792E4;
+    --secondary-light: #B5DDFF;
+    --secondary-dark: #5A6E7F;
+    --warning: #FDC15F;
+    --light: #fff;
+    --darker: #000;
+}
 
 .bg_primary {
     background-color: var(--primary);
@@ -135,12 +141,24 @@ a {
     background-color: var(--secondary);
 }
 
+.light {
+    background-color: var(--light);
+}
+
 .bg_dark {
     background-color: var(--dark);
 }
 
+.bg_secondary_light {
+    background-color: var(--secondary-light);
+}
+
 .y_centered {
     align-items: center;
+}
+
+.d_flex {
+    display: flex;
 }
 
 /* #endregion utility */
@@ -174,6 +192,95 @@ nav .btn {
 
 
 /* #region main */
+.demo {
+    margin-top: 3%;
+}
+
+.demo .card {
+    padding-left: 3%;
+}
+
+.demo .row {
+    margin-left: -1.5%;
+}
+
+.demo .row .col_3,
+.demo .row .col_7 {
+    margin-left: 1.5%;
+    margin-bottom: 1.5%;
+}
+
+.demo .row .col_3 {
+    flex-grow: 0;
+
+}
+
+.demo .row .col_7,
+.demo .row .col_3 {
+    flex-grow: 1;
+}
+
+
+.demo a {
+    color: var(--light);
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+
+.demo h3,
+.demo h4 {
+    color: var(--secondary);
+    padding: 5% 0;
+}
+
+.card .right {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+}
+
+.card .col_5.right img {
+    width: 70%;
+}
+
+.card .left h4 {
+    padding: 10% 0;
+}
+
+.card .left .btn {
+    margin-top: 10%;
+    margin-bottom: 15%;
+}
+
+.demo p {
+    color: var(--secondary-dark);
+    font-weight: 500;
+
+}
+
+.card_sm {
+    text-align: center;
+    padding: 0 1%;
+    aspect-ratio: 1.1;
+}
+
+.card_sm h3 {
+    padding: 5% 0;
+}
+
+.card_sm .item {
+    display: inline-block;
+    font-size: 70px;
+    color: var(--secondary);
+    padding-top: 5%;
+}
+
+.card_sm .details {
+    text-align: center;
+    padding: 1rem;
+}
+
 
 
 /* #endregion main */
