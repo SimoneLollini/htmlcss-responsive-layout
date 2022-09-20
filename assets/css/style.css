@@ -481,6 +481,21 @@ a.btn.bg_primary {
     font-size: 5rem;
 }
 
+.about_us h3 {
+    font-size: 1.5rem;
+    color: var(--primary);
+    padding-top: 5%;
+}
+
+.about_us a.btn.bg_primary {
+    font-weight: 400;
+    margin: 10% 0;
+}
+
+.about_us a.btn.bg_primary>i {
+    padding-right: 0.25rem;
+}
+
 /* #endregion about us */
 /* #endregion main */
 
