@@ -197,6 +197,12 @@ nav .btn {
     color: var(--darker);
 }
 
+.menu_sm {
+    display: none;
+    color: var(--light);
+    font-size: 1.25rem;
+}
+
 /* #endregion header */
 
 
@@ -526,6 +532,19 @@ a.btn.bg_primary {
 @media screen and (max-width: 768px) {
     .container {
         max-width: 720px;
+    }
+
+    header .menu_lg {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .menu_lg>a {
+        display: none;
+    }
+
+    .menu_lg>.menu_sm {
+        display: inline-block;
     }
 
     .d_tablet_col {
