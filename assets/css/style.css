@@ -16,7 +16,7 @@ img {
 }
 
 .container {
-    width: 70%;
+    max-width: 1140px;
     margin: auto;
 }
 
@@ -213,7 +213,6 @@ nav .btn {
 
 .demo .row {
     margin-left: -1.5%;
-    height: 100%;
 }
 
 .demo .row .col_3,
@@ -252,8 +251,11 @@ nav .btn {
     margin-bottom: 0;
 }
 
-.card .col_5.right img {
-    width: 70%;
+.card img {
+    width: 30%;
+    position: absolute;
+    bottom: 0;
+    right: 10%
 }
 
 .card .left h4 {
@@ -346,7 +348,7 @@ nav .btn {
     margin: 10%;
     font-size: 1.25rem;
     border-radius: 50%;
-    padding: 4% 5%;
+    padding: 3% 5%;
 }
 
 /* #endregion planning */
@@ -384,7 +386,7 @@ nav .btn {
 }
 
 .partner_card img {
-    width: 70%;
+
     border-radius: 50%;
     object-fit: cover;
     aspect-ratio: 1/1;
@@ -467,7 +469,7 @@ a.btn.bg_primary {
 }
 
 .about_us img {
-    width: 90%;
+
     border-radius: 50%;
     object-fit: cover;
     aspect-ratio: 1/1;
@@ -497,6 +499,15 @@ a.btn.bg_primary {
 }
 
 /* #endregion about us */
+
+/* #region Call to action */
+
+
+/* #endregion Call to action */
+
+
+
+
 /* #endregion main */
 
 
@@ -504,3 +515,29 @@ a.btn.bg_primary {
 
 
 /* #endregion footer */
+
+
+
+
+
+/* media query */
+
+/* tablet */
+@media screen and (max-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+
+    .d_tablet_col {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mq_tablet_12 {
+        width: calc(100% / 12 * 12);
+    }
+
+    .mq_tablet_5 {
+        width: calc(100% / 12 *5);
+    }
+}
