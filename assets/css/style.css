@@ -529,9 +529,12 @@ a.btn.bg_primary {
 /* media query */
 
 /* tablet */
+
+
 @media screen and (max-width: 768px) {
     .container {
         max-width: 720px;
+        margin: auto;
     }
 
     header .menu_lg {
@@ -547,10 +550,7 @@ a.btn.bg_primary {
         display: inline-block;
     }
 
-    .d_tablet_col {
-        display: flex;
-        flex-direction: column;
-    }
+
 
     .mq_tablet_12 {
         width: calc(100% / 12 * 12);
@@ -558,5 +558,16 @@ a.btn.bg_primary {
 
     .mq_tablet_5 {
         width: calc(100% / 12 *5);
+    }
+}
+
+@media screen and (max-width: 340px) {
+    .container {
+        max-width: 300px;
+        margin: auto;
+    }
+
+    .row[class^="col_"] {
+        width: 100%;
     }
 }
