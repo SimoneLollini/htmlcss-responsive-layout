@@ -8,7 +8,7 @@
 
 
 .font {
-    font-family: 'Inter', sans-serif;
+    font-family: 'PT Sans', sans-serif;
 }
 
 img {
@@ -161,6 +161,15 @@ a {
     display: flex;
 }
 
+.position_r {
+    position: relative;
+}
+
+.position_a {
+    position: absolute;
+
+}
+
 /* #endregion utility */
 
 
@@ -192,6 +201,8 @@ nav .btn {
 
 
 /* #region main */
+
+/* #region demo */
 .demo {
     margin-top: 3%;
 }
@@ -202,6 +213,7 @@ nav .btn {
 
 .demo .row {
     margin-left: -1.5%;
+    height: 100%;
 }
 
 .demo .row .col_3,
@@ -237,7 +249,7 @@ nav .btn {
     display: flex;
     justify-content: center;
     align-items: flex-end;
-
+    margin-bottom: 0;
 }
 
 .card .col_5.right img {
@@ -245,24 +257,27 @@ nav .btn {
 }
 
 .card .left h4 {
-    padding: 10% 0;
+    margin: 10% 0;
 }
 
 .card .left .btn {
     margin-top: 10%;
-    margin-bottom: 15%;
+
 }
 
 .demo p {
     color: var(--secondary-dark);
-    font-weight: 500;
+    font-weight: 600;
 
 }
 
-.card_sm {
+.demo .card_sm {
     text-align: center;
+}
+
+.demo .card_sm {
     padding: 0 1%;
-    aspect-ratio: 1.1;
+    padding-bottom: 10%;
 }
 
 .card_sm h3 {
@@ -281,8 +296,192 @@ nav .btn {
     padding: 1rem;
 }
 
+/* #endregion demo */
+
+/* #region planning */
+.planning {
+    margin: 5% 0;
+}
+
+.planning .row {
+    gap: 5%;
+}
+
+.planning .left h2,
+.planning .left p {
+    color: var(--light);
+}
+
+.left,
+.right {
+    padding: 1%;
+}
 
 
+
+.planning h2 {
+    padding: 10% 0;
+    font-size: 2rem;
+}
+
+.planning h3 {
+    padding: 10%;
+    font-size: 1.75rem;
+}
+
+.planning .left {
+    padding-top: 5%;
+}
+
+.planning .right {
+    background-color: var(--light);
+    border-radius: 3rem;
+    text-align: center;
+    margin-top: 15%;
+    margin-bottom: 5%;
+}
+
+.right .item {
+    display: inline-block;
+    margin: 10%;
+    font-size: 1.25rem;
+    border-radius: 50%;
+    padding: 4% 5%;
+}
+
+/* #endregion planning */
+
+/* #region partner */
+
+.partner_header {
+    text-align: center;
+    margin-bottom: 1%;
+}
+
+.partner h2 {
+    font-size: 3rem;
+    color: var(--primary);
+    padding: 5% 0;
+}
+
+.partner p,
+.partner span {
+    font-size: 1.15rem;
+
+}
+
+.partner_card {
+    color: var(--light);
+}
+
+
+
+.partner_card {
+    margin-top: 3%;
+    background-color: var(--primary);
+    border-radius: 3rem;
+
+}
+
+.partner_card img {
+    width: 70%;
+    border-radius: 50%;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+    margin: 6% 4%;
+}
+
+.partner_card .right {
+    padding-left: 3%;
+}
+
+.quote>h3 {
+    padding-top: 3%;
+
+}
+
+/* #endregion partner */
+
+
+/* #region benefits */
+.benefits {
+    margin: 5% 0;
+}
+
+.benefits .row {
+    gap: 1.5%;
+}
+
+.benefits .container {
+    padding: 3% 0;
+}
+
+.benefits .card_sm {
+    background-color: var(--light);
+    padding: 2%;
+    flex-grow: 1;
+    border-radius: 1.25rem;
+    margin-bottom: 1.5%;
+}
+
+.benefits h2 {
+    color: var(--primary);
+    font-size: 3.75rem;
+}
+
+.benefits h3 {
+    color: var(--light);
+    font-size: 2.25rem;
+    text-align: center;
+    padding-bottom: 5%;
+}
+
+a.btn.bg_primary {
+    margin: 20% 0;
+    color: var(--light);
+    font-weight: 700;
+}
+
+/* #endregion benefits */
+
+
+/* #region about us */
+
+.about_us {
+    padding: 5%;
+}
+
+.about_us .row {
+    justify-content: space-between;
+}
+
+.about_us h2 {
+    font-size: 3.5rem;
+    color: var(--primary);
+    padding-bottom: 3%;
+}
+
+.about_us p {
+    line-height: 2rem;
+    padding-bottom: 3%;
+}
+
+.about_us img {
+    width: 90%;
+    border-radius: 50%;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+    margin: 6% 4%;
+}
+
+.marker {
+    top: 0;
+    right: 0;
+    color: var(--primary);
+    font-size: 5rem;
+}
+
+/* #endregion about us */
 /* #endregion main */
 
 
